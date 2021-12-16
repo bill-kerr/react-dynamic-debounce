@@ -1,13 +1,27 @@
 {
-  "name": "dynamic-debounce",
-  "version": "0.0.0",
+  "name": "react-dynamic-debounce",
+  "version": "0.0.1",
+  "author": "Bill Kerr <bk7987@gmail.com>",
+  "homepage": "https://github.com/bill-kerr/react-dynamic-debounce",
+  "description": "A dynamically adjustable debounce hook",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "debounce",
+    "dynamic",
+    "react hook",
+    "react debounce",
+    "dynamic delay",
+    "use debounce",
+    "react throttle"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "peerDependencies": {
-    "react": "^17.0.2"
+    "react": ">=16.8"
   },
   "devDependencies": {
     "@types/react": "^17.0.33",
