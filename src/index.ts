@@ -73,7 +73,6 @@ export function useDynamicDebounceCallback<T extends unknown[]>(
 	const timer = React.useRef<ReturnType<typeof setTimeout>>();
 	const [isDebouncing, setIsDebouncing] = React.useState(false);
 	const samples = React.useRef<number[]>([]);
-	const isMounted = React.useRef(true);
 	const [delay, setDelay] = React.useState<number>(defaultDelay);
 
 	React.useEffect(() => {
@@ -86,7 +85,6 @@ export function useDynamicDebounceCallback<T extends unknown[]>(
 				clearTimeout(timer.current);
 			}
 			timer.current = undefined;
-			isMounted.current = false;
 		},
 		[],
 	);
@@ -112,7 +110,6 @@ export function useDynamicDebounceCallback<T extends unknown[]>(
 			setIsDebouncing(true);
 
 			timer.current = setTimeout(() => {
-				if (!isMounted.current) return;
 				setIsDebouncing(false);
 				samples.current = [];
 				setDelay(defaultDelay);
