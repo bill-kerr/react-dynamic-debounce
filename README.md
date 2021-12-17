@@ -11,7 +11,7 @@ npm i react-dynamic-debounce
 ```jsx
 import { useDynamicDebounce } from 'react-dynamic-debounce';
 
-function function BasicExample() {
+function BasicExample() {
 	const [debouncedValue, setDebouncedValue, { delay }] = useDynamicDebounce('Hello World', {
 		defaultDelay: 500,
 		delayFunction: (averageGap) => Math.floor(averageGap + 275),
