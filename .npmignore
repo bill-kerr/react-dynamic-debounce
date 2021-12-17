@@ -1,0 +1,13 @@
+node_modules
+examples
+.vscode
+src
+.nvmrc
+.prettierrc
+package-lock.json
+tsconfig.eslint.json
+tsconfig.json
+vite.config.ts
+vite-env.d.ts
+.gitignore
+.eslintrc.json
