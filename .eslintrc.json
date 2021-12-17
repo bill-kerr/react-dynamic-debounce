@@ -1,0 +1,72 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": { "project": "./tsconfig.eslint.json" },
+	"plugins": ["@typescript-eslint", "jest-dom", "testing-library"],
+	"extends": [
+		"airbnb-typescript",
+		"plugin:react/recommended",
+		"plugin:jest-dom/recommended",
+		"plugin:testing-library/react",
+		"plugin:import/recommended",
+		"prettier"
+	],
+	"env": { "es6": true, "browser": true, "node": true },
+	"settings": { "react": { "version": "detect" } },
+	"rules": {
+		"import/prefer-default-export": "off",
+		"import/no-default-export": "error",
+		"eol-last": ["error", "always"],
+		"react/react-in-jsx-scope": "off",
+		"no-restricted-globals": "off",
+		"no-unreachable": "error",
+		"object-curly-newline": "off",
+		"no-multiple-empty-lines": [
+			"error",
+			{
+				"max": 1
+			}
+		],
+		"no-console": [
+			"error",
+			{
+				"allow": ["warn", "error"]
+			}
+		],
+		"max-len": [
+			1,
+			120,
+			2,
+			{
+				"ignorePattern": "^import|export\\s.+\\sfrom\\s.+;$",
+				"ignoreUrls": true
+			}
+		],
+		"@typescript-eslint/no-use-before-define": [
+			"warn",
+			{
+				"functions": false,
+				"typedefs": false
+			}
+		],
+		"react/jsx-key": ["error", { "checkFragmentShorthand": true }],
+		"react/jsx-props-no-spreading": "off",
+		"react/prop-types": "off",
+		"@typescript-eslint/no-unused-vars": [
+			"error",
+			{
+				"argsIgnorePattern": "^_"
+			}
+		],
+		"@typescript-eslint/no-explicit-any": "error",
+		"react/require-default-props": "off"
+	},
+	"overrides": [
+		{
+			"rules": {
+				"import/no-default-export": "off",
+				"import/no-extraneous-dependencies": "off"
+			},
+			"files": ["vite.config.ts"]
+		}
+	]
+}

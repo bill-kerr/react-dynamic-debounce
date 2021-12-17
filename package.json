@@ -1,35 +1,52 @@
 {
-  "name": "react-dynamic-debounce",
-  "version": "0.0.1",
-  "author": "Bill Kerr <bk7987@gmail.com>",
-  "homepage": "https://github.com/bill-kerr/react-dynamic-debounce",
-  "description": "A dynamically adjustable debounce hook",
-  "license": "MIT",
-  "keywords": [
-    "react",
-    "debounce",
-    "dynamic",
-    "react hook",
-    "react debounce",
-    "dynamic delay",
-    "use debounce",
-    "react throttle"
-  ],
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "peerDependencies": {
-    "react": ">=16.8"
-  },
-  "devDependencies": {
-    "@types/react": "^17.0.33",
-    "@types/react-dom": "^17.0.10",
-    "@vitejs/plugin-react": "^1.0.7",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "typescript": "^4.4.4",
-    "vite": "^2.7.2"
-  }
+	"name": "react-dynamic-debounce",
+	"version": "0.0.1",
+	"author": "Bill Kerr <bk7987@gmail.com>",
+	"homepage": "https://github.com/bill-kerr/react-dynamic-debounce/blob/main/README.md",
+	"description": "A debounce hook that dynamically adjusts to input speed",
+	"license": "MIT",
+	"types": "./dist/index.d.ts",
+	"main": "./dist/react-dynamic-debounce.umd.js",
+	"module": "./dist/react-dynamic-debounce.es.js",
+	"keywords": [
+		"react",
+		"debounce",
+		"dynamic",
+		"react hook",
+		"react debounce",
+		"dynamic delay",
+		"use debounce",
+		"react throttle"
+	],
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build && tsc",
+		"build:types": "tsc --emitDeclarationOnly",
+		"preview": "vite preview"
+	},
+	"peerDependencies": {
+		"react": ">=16.8"
+	},
+	"devDependencies": {
+		"@types/react": "^17.0.33",
+		"@types/react-dom": "^17.0.10",
+		"@typescript-eslint/eslint-plugin": "^5.7.0",
+		"@typescript-eslint/parser": "^5.7.0",
+		"@vitejs/plugin-react": "^1.0.7",
+		"eslint": "^8.4.1",
+		"eslint-config-airbnb-typescript": "^16.1.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-jest-dom": "^3.9.2",
+		"eslint-plugin-jsx-a11y": "^6.5.1",
+		"eslint-plugin-react": "^7.27.1",
+		"eslint-plugin-react-hooks": "^4.3.0",
+		"eslint-plugin-testing-library": "^5.0.1",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"typescript": "^4.4.4",
+		"vite": "^2.7.2"
+	},
+	"dependencies": {
+		"eslint-plugin-import": "^2.25.3"
+	}
 }
