@@ -1,6 +1,6 @@
 ## react-dynamic-debounce
 
-A dynamically adjustable debounce hook
+A debounce hook that dynamically adjusts to input speed.
 
 ## Quick Start
 
