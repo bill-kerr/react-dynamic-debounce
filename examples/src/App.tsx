@@ -1,5 +1,12 @@
-import { BasicExample } from './Examples';
+import { BasicExample, ExampleWithDebouncing, UnmountExample } from './Examples';
 
 export function App() {
-	return <BasicExample />;
+	return (
+		<>
+			<BasicExample />
+			<div style={{ marginTop: '100px' }}>
+				<UnmountExample />
+			</div>
+		</>
+	);
 }
