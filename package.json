@@ -1,6 +1,6 @@
 {
 	"name": "react-dynamic-debounce",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"author": "Bill Kerr <bk7987@gmail.com>",
 	"homepage": "https://github.com/bill-kerr/react-dynamic-debounce/blob/main/README.md",
 	"description": "A debounce hook that dynamically adjusts to input speed",
