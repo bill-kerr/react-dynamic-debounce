@@ -45,7 +45,7 @@ export function useDynamicDebounce<S>(
 | initialState | `(S \| () => S)`                                        | The initial state value.                           |
 | config       | [`UseDynamicDebounceConfig`](#UseDynamicDebounceConfig) | Config object, allowing customization of behavior. |
 
-### useDynamicDebounceCallback(callback)
+### useDynamicDebounceCallback(callback, options?)
 
 A hook that returns a debounced callback with the same behavior and customization options as `useDynamicDebounce`.
 
