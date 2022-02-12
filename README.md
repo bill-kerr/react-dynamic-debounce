@@ -33,7 +33,7 @@ function BasicExample() {
 
 A debounce hook that can adjust its debounce delay based on input speed. Provide a `delayFunction` to customize this behavior. Use this hook as you would `useState`.
 
-```tsx
+```jsx
 export function useDynamicDebounce<S>(
 	initialState: S | (() => S),
 	config?: UseDynamicDebounceConfig,
@@ -49,7 +49,7 @@ export function useDynamicDebounce<S>(
 
 A hook that returns a debounced callback with the same behavior and customization options as `useDynamicDebounce`.
 
-```
+```jsx
 export function useDynamicDebounceCallback<T extends unknown[]>(
 	callback: (...args: T) => void,
 	config?: UseDynamicDebounceConfig,
@@ -69,7 +69,7 @@ Pass any number of arguments from this object as the second argument to either `
 | minSamples    | `number`                         | `6`                                      | The minimum number of input events that will happen before the delay function is called. Cannot be below 2.                                                                                           |
 | maxSamples    | `number`                         | `10`                                     | The maximum number of input events that will be used to calculate the `averageGap` that gets passed to the delay function.                                                                            |
 
-```tsx
+```jsx
 // Debounce hook with logarithmic delay function
 
 const [value, setValue, { isDebouncing }] = useDynamicDebounce('Hello World!', {
